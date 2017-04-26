@@ -5,6 +5,11 @@ public class Student extends Person{
 	private int id;
 	private static String schoolName;
 	
+	public Student(){}
+	public Student(int id,String name,String gender,String phone){
+		super(name,gender,phone);
+		this.id=id;
+	}
 	public int getId() {
 		return id;
 	}
